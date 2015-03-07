@@ -29,8 +29,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu trusty multiverse" >> /etc/apt/so
   rm -rf /tmp/* && \
   chmod u+x /start.sh
 
-VOLUME /config
-VOLUME /data
+VOLUME /config /downloads
 
 EXPOSE 8080 9090
 

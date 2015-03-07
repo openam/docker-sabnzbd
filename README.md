@@ -16,7 +16,7 @@ Run the built image:
 docker run -d --name sabnzbd -p 8080:8080 -p 9090:9090 sabnzbd
 
 # run with linking volumes to host system
-docker run -d --name sabnzbd -v /path/to/your/saved/config:/config -v /path/to/save/data:/data -p 8080:8080 -p 9090:9090 sabnzbd
+docker run -d --name sabnzbd -v /path/to/your/saved/config:/config -v /path/to/save/downloads:/downloads -p 8080:8080 -p 9090:9090 sabnzbd
 ```
 
-The `/data` folder isn't used in the settings by default. Change the settings to use `/data` if wanted. Otherwise it defaults to using the `/config` folder.
+The `/downloads` folder isn't used in the settings by default. Change the settings to use `/downloads` if wanted. Otherwise it defaults to using the `/config` folder.
